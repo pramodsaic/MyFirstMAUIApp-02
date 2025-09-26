@@ -1,9 +1,13 @@
+using MyFirstMAUIApp.ViewModel;
+
 namespace MyFirstMAUIApp.View;
 
-public partial class NewPage1 : ContentPage
+public partial class MainPage : ContentPage
 {
-	public NewPage1()
-	{
-		InitializeComponent();
-	}
+    public MainPage()
+    {
+        InitializeComponent();
+        BindingContext = new MainViewModel();
+
+    }
 }
