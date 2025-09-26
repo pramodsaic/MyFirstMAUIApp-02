@@ -2,7 +2,7 @@
 
 namespace MyFirstMAUIApp;
 
-public partial class MainPage : ContentPage
+public partial class MainPageOld : ContentPage
 {
     int count = 0;
 

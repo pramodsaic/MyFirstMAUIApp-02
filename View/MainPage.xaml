@@ -1,12 +1,63 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MyFirstMAUIApp.View.NewPage1"
-             Title="NewPage1">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MyFirstMAUIApp.View.MainPage"
+    Title="MainView" >
+
+    <VerticalStackLayout Padding="20" Spacing="20">
+
+        <!-- Button Grid -->
+        <Grid ColumnSpacing="10" RowSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Row 1 -->
+            <Button x:Name="LayoutsButton"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Text="Layouts"
+                    Style="{StaticResource TitleButton}"/>
+
+            <Button 
+                x:Name="ImagesButton"
+                Grid.Row="0"
+                Grid.Column="1"
+                Text="Images"
+                Style="{StaticResource TitleButton}" />
+
+            <!-- Row 2 -->
+            <Button 
+                x:Name="CollectionsButton"
+                Grid.Row="1"
+                Grid.Column="0"
+                Text="Collections"
+                Style="{StaticResource TitleButton}"
+                SemanticProperties.Description="Button to navigate to Collections page" />
+
+            <Button 
+                x:Name="ControlsButton"
+                Grid.Row="1"
+                Grid.Column="1"
+                Text="Controls"
+                Style="{StaticResource TitleButton}"
+                SemanticProperties.Description="Button to navigate to Controls page" />
+
+            <!-- Row 3 -->
+            <Button 
+                x:Name="SqlLiteButton"
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Text="SQL Lite"
+                Style="{StaticResource TitleButton}"
+                SemanticProperties.Description="Button to navigate to SQL Lite page" />
+        </Grid>
     </VerticalStackLayout>
 </ContentPage>
