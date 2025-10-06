@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using MyFirstMAUIApp.Model;
 using MyFirstMAUIApp.View;
+using MyFirstMobileApp.ViewModels;
 
 namespace MyFirstMAUIApp.ViewModel
 {
-    internal class MainViewModel
+    public class MainViewModel : BaseViewModel
     {
         public TitleMain TitleMain { get; set; }
         public ICommand OnLayoutsClickedCommand { get; set; }

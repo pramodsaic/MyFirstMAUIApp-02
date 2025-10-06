@@ -2,16 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMAUIApp.View.MainPage"
-             Title="">
+             Title="{Binding Title}">
 
     <VerticalStackLayout Padding="30" Spacing="25">
-
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center"
-            FontSize="20"
-            Margin="0,0,0,30"/>
 
         <Grid ColumnSpacing="10" RowSpacing="10">
             <Grid.RowDefinitions>
@@ -29,15 +22,15 @@
                 x:Name="LayoutsButton"
                 Grid.Row="0"
                 Grid.Column="0"
-                Text="{Binding TitleMain.ButtonTextLayouts}"
+                Text="{Binding ButtonTextLayouts}"
                 Command="{Binding OnLayoutsClickedCommand}"
                 Style="{StaticResource TitleButton}"/>
 
             <Button 
-                x:Name="StackLayoutButton"
+                x:Name="ImageLayoutButton"
                 Grid.Row="0"
                 Grid.Column="1"
-                Text="{Binding TitleMain.ButtonTextStackLayout}"
+                Text="{Binding ButtonTextStackLayout}"
                 Style="{StaticResource TitleButton}"/>
 
             <!-- Row 1 -->
@@ -45,14 +38,15 @@
                 x:Name="CollectionsButton"
                 Grid.Row="1"
                 Grid.Column="0"
-                Text="{Binding TitleMain.ButtonTextCollections}"
+                Text="{Binding ButtonTextLayouts}"
+                Command="{Binding OnLayoutsClickedCommand}"
                 Style="{StaticResource TitleButton}"/>
 
             <Button 
-                x:Name="ControlsButton"
+                x:Name="ControlsLayoutButton"
                 Grid.Row="1"
                 Grid.Column="1"
-                Text="{Binding TitleMain.ButtonTextControls}"
+                Text="{Binding ButtonTextStackLayout}"
                 Style="{StaticResource TitleButton}"/>
 
             <!-- Row 2 -->
@@ -62,8 +56,6 @@
                 Grid.ColumnSpan ="2"
                 Text="{Binding TitleMain.ButtonTextSQLite}"
                 Style="{StaticResource TitleButton}"/>
-
         </Grid>
     </VerticalStackLayout>
-
 </ContentPage>
