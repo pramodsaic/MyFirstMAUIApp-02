@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMAUIApp.View.MainPage"
-             Title="{Binding Title}">
+             Title="Main Menu">
 
     <VerticalStackLayout Padding="30" Spacing="25">
 
@@ -18,44 +18,43 @@
             </Grid.ColumnDefinitions>
 
             <!-- Row 0 -->
-            <Button 
-                x:Name="LayoutsButton"
-                Grid.Row="0"
-                Grid.Column="0"
-                Text="{Binding ButtonTextLayouts}"
-                Command="{Binding OnLayoutsClickedCommand}"
-                Style="{StaticResource TitleButton}"/>
+            <Button x:Name="LayoutsButton"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Text="{Binding LayoutsButton}"
+                    Command="{Binding OnLayoutsClickedCommand}"
+                    Style="{StaticResource TitleButton}"/>
 
-            <Button 
-                x:Name="ImageLayoutButton"
-                Grid.Row="0"
-                Grid.Column="1"
-                Text="{Binding ButtonTextStackLayout}"
-                Style="{StaticResource TitleButton}"/>
+            <Button x:Name="StackLayoutButton"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Text="{Binding ImagesButton}"
+                    Style="{StaticResource TitleButton}"/>
 
             <!-- Row 1 -->
-            <Button 
-                x:Name="CollectionsButton"
-                Grid.Row="1"
-                Grid.Column="0"
-                Text="{Binding ButtonTextLayouts}"
-                Command="{Binding OnLayoutsClickedCommand}"
-                Style="{StaticResource TitleButton}"/>
+            <Button x:Name="CollectionsButton"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Text="{Binding CollectionsButton}"
+                    Style="{StaticResource TitleButton}"/>
 
-            <Button 
-                x:Name="ControlsLayoutButton"
-                Grid.Row="1"
-                Grid.Column="1"
-                Text="{Binding ButtonTextStackLayout}"
-                Style="{StaticResource TitleButton}"/>
+            <Button x:Name="ControlsButton"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Text="{Binding ControlsButton}"
+                    Style="{StaticResource TitleButton}"/>
 
             <!-- Row 2 -->
-            <Button 
-                x:Name="SQLiteButton"
-                Grid.Row="2"
-                Grid.ColumnSpan ="2"
-                Text="{Binding TitleMain.ButtonTextSQLite}"
-                Style="{StaticResource TitleButton}"/>
+            <Button x:Name="SQLiteButton"
+                    Grid.Row="2"
+                    Grid.ColumnSpan="2"
+                    Text="{Binding SQLiteButton}"
+                    Style="{StaticResource TitleButton}"/>
+
         </Grid>
     </VerticalStackLayout>
+
 </ContentPage>
+
+
+

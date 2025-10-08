@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MyFirstMAUIApp.Model
+﻿namespace MyFirstMAUIApp.Model
 {
-    public class TitleLayout
+    public static class TitleLayouts
     {
-        public string ButtonTextStackLayout { get; set; } = "StackLayout";
-        public string ButtonTextAbsoluteLayout { get; set; } = "AbsoluteLayout";
-        public string ButtonTextFlexLayout { get; set; } = "FlexLayout";
-        public string ButtonTextGridLayout { get; set; } = "GridLayout";
+        public static string Title { get; set; } = "Layouts";
+        public static string ButtonTextStackLayout { get; set; } = "Stack Layout";
+        public static string ButtonTextVerticalLayout { get; set; } = "Vertical Layout";
+        public static string ButtonTextHorizontalLayout { get; set; } = "Horizontal Layout";
+        public static string ButtonTextAbsoluteLayout { get; set; } = "Absolute Layout";
     }
 }
+
+

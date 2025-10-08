@@ -1,19 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MyFirstMAUIApp.Model;
+﻿using MyFirstMAUIApp.Model;
+using MyFirstMobileApp.ViewModels;
 
 namespace MyFirstMAUIApp.ViewModel
 {
-    internal class LayoutsViewModel
+    public class LayoutsViewModel : BaseViewModel
     {
-        public TitleLayout TitleLayout { get; set; }
+        public string ButtonTextStackLayout { get; set; } = TitleLayouts.ButtonTextStackLayout;
+        public string ButtonTextVerticalLayout { get; set; } = TitleLayouts.ButtonTextVerticalLayout;
+        public string ButtonTextHorizontalLayout { get; set; } = TitleLayouts.ButtonTextHorizontalLayout;
+        public string ButtonTextAbsoluteLayout { get; set; } = TitleLayouts.ButtonTextAbsoluteLayout;
 
         public LayoutsViewModel()
         {
-            TitleLayout = new TitleLayout();
+            Title = TitleLayouts.Title;
         }
     }
 }
+
+

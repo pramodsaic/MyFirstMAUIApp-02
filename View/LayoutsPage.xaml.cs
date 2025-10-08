@@ -10,3 +10,5 @@ public partial class LayoutsPage : ContentPage
         BindingContext = new LayoutsViewModel();
     }
 }
+
+

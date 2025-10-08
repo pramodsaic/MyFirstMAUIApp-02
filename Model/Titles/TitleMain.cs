@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MyFirstMAUIApp.Model
+﻿namespace MyFirstMAUIApp.Model
 {
-    public class TitleMain
+    public static class TitleMain
     {
-        public string ButtonTextLayouts { get; set; } = "Layouts";
-        public string ButtonTextStackLayout { get; set; } = "StackLayout";
-        public string ButtonTextCollections { get; set; } = "Collections";
-        public string ButtonTextControls { get; set; } = "Controls";
-        public string ButtonTextSQLite { get; set; } = "SQL Lite";
-
+        public static string Title { get; set; } = "Main Menu";
+        public static string LayoutsButton { get; set; } = "Layouts";
+        public static string ImagesButton { get; set; } = "Images";
+        public static string CollectionsButton { get; set; } = "Collections";
+        public static string ControlsButton { get; set; } = "Controls";
+        public static string SQLiteButton { get; set; } = "SQL Lite";
     }
 }
+
+

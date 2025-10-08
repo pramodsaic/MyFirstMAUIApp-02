@@ -4,15 +4,8 @@
              x:Class="MyFirstMAUIApp.View.LayoutsPage"
              Title="LayoutsPage">
 
+
     <VerticalStackLayout Padding="30" Spacing="25">
-
-        <Label 
-            Text="Layout Options"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center"
-            FontSize="20"
-            Margin="0,0,0,30"/>
-
         <Grid ColumnSpacing="10" RowSpacing="10">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
@@ -23,37 +16,41 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <!-- Row 0 -->
-            <Button 
-                x:Name="StackLayoutButton"
-                Grid.Row="0"
-                Grid.Column="0"
-                Text="{Binding TitleLayout.ButtonTextStackLayout}"
-                Style="{StaticResource TitleButton}"/>
 
-            <Button 
-                x:Name="AbsoluteLayoutButton"
-                Grid.Row="0"
-                Grid.Column="1"
-                Text="{Binding TitleLayout.ButtonTextAbsoluteLayout}"
-                Style="{StaticResource TitleButton}"/>
+            <!-- Row 0 -->
+            <Button x:Name="StackLayoutButton"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Text="{Binding ButtonTextStackLayout}"
+                    Style="{StaticResource TitleButton}"/>
+
+
+            <Button x:Name="VerticalLayoutButton"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Text="{Binding ButtonTextVerticalLayout}"
+                    Style="{StaticResource TitleButton}"/>
+
 
             <!-- Row 1 -->
-            <Button 
-                x:Name="FlexLayoutButton"
-                Grid.Row="1"
-                Grid.Column="0"
-                Text="{Binding TitleLayout.ButtonTextFlexLayout}"
-                Style="{StaticResource TitleButton}"/>
+            <Button x:Name="HorizontalLayoutButton"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Text="{Binding ButtonTextHorizontalLayout}"
+                    Style="{StaticResource TitleButton}"/>
 
-            <Button 
-                x:Name="GridLayoutButton"
-                Grid.Row="1"
-                Grid.Column="1"
-                Text="{Binding TitleLayout.ButtonTextGridLayout}"
-                Style="{StaticResource TitleButton}"/>
+
+            <Button x:Name="AbsoluteLayoutButton"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Text="{Binding ButtonTextAbsoluteLayout}"
+                    Style="{StaticResource TitleButton}"/>
+
 
         </Grid>
     </VerticalStackLayout>
 
+
 </ContentPage>
+
+
