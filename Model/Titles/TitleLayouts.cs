@@ -9,5 +9,3 @@
         public static string ButtonTextAbsoluteLayout { get; set; } = "Absolute Layout";
     }
 }
-
-

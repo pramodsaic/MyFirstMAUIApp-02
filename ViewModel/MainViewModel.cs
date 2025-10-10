@@ -7,6 +7,7 @@ namespace MyFirstMAUIApp.ViewModel
 {
     public class MainViewModel : BaseViewModel
     {
+        public string PageTitle { get; set; } = TitleMain.Title;
         public string LayoutsButton { get; set; } = TitleMain.LayoutsButton;
         public string ImagesButton { get; set; } = TitleMain.ImagesButton;
         public string CollectionsButton { get; set; } = TitleMain.CollectionsButton;
