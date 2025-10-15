@@ -7,5 +7,6 @@
         public static string ButtonTextVerticalLayout { get; set; } = "Vertical Layout";
         public static string ButtonTextHorizontalLayout { get; set; } = "Horizontal Layout";
         public static string ButtonTextAbsoluteLayout { get; set; } = "Absolute Layout";
+        public static string ButtonTextFlexLayout { get; set; } = "Flex Layout";
     }
 }
