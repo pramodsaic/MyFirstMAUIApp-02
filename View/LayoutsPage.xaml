@@ -17,50 +17,42 @@
             </Grid.ColumnDefinitions>
 
 
-            <!-- Row 0 -->
-            
+
+            <Button x:Name="StackLayoutButton"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Text="{Binding ButtonTextStackLayout}"
+                    Style="{StaticResource TitleButton}"/>
 
 
             <Button x:Name="VerticalLayoutButton"
                     Grid.Row="0"
-                    Grid.Column="0"
+                    Grid.Column="1"
                     Text="{Binding ButtonTextVerticalLayout}"
                     Style="{StaticResource TitleButton}"/>
 
 
-            <!-- Row 1 -->
+
             <Button x:Name="HorizontalLayoutButton"
-                    Grid.Row="0"
-                    Grid.Column="1"
+                    Grid.Row="1"
+                    Grid.Column="0"
                     Text="{Binding ButtonTextHorizontalLayout}"
                     Style="{StaticResource TitleButton}"/>
 
 
             <Button x:Name="AbsoluteLayoutButton"
                     Grid.Row="1"
-                    Grid.Column="0"
+                    Grid.Column="1"
                     Text="{Binding ButtonTextAbsoluteLayout}"
                     Style="{StaticResource TitleButton}"/>
-            <Button x:Name="FlexLayoutButton"
-                    Grid.Row="0"
-                    Grid.Column="1"
-                    Text="{Binding ButtonTextFlexLayout}"
-                    Style="{StaticResource TitleButton}"/>
-            <Button x:Name="StackLayoutButton"
+
+            <Button x:Name="FlexLayout"
                     Grid.Row="2"
                     Grid.Column="2"
-                    Text="{Binding ButtonTextStackLayout}"
+                    Text="{Binding ButtonTextFlexLayout}"
                     Style="{StaticResource TitleButton}"/>
-
 
         </Grid>
     </VerticalStackLayout>
 
-
 </ContentPage>
-
-
-
-
-
-
