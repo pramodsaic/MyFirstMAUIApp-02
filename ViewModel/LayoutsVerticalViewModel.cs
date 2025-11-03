@@ -15,5 +15,3 @@ namespace MyFirstMAUIApp.ViewModels
 
     }
 }
-
-

@@ -9,5 +9,3 @@ public partial class LayoutsVerticalPage : ContentPage
         BindingContext = new LayoutsVerticalViewModel();
     }
 }
-
-

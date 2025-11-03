@@ -11,6 +11,3 @@ namespace MyFirstMAUIApp.Models.Titles
         public static string StackLayoutTitle { get; } = "Stack Layout";
     }
 }
-
-
-

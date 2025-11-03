@@ -9,4 +9,3 @@ public partial class LayoutsStackPage : ContentPage
         BindingContext = new LayoutsStackViewModel();
     }
 }
-

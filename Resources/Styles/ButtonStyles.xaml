@@ -10,13 +10,13 @@
         <Setter Property="HeightRequest" Value="50" />
         <Setter Property="CornerRadius" Value="10" />
         <Setter Property="BackgroundColor" Value="ForestGreen" />
-        <Setter Property="TextColor" Value="Blue" />
+        <Setter Property="TextColor" Value="White" />
         <Setter Property="FontAttributes" Value="Bold" />
         <Setter Property="HorizontalOptions" Value="Fill" />
 
     </Style>
 
-    <!--
+
     <Style x:Key="LayoutButton"
            TargetType="Button">
 
@@ -24,13 +24,11 @@
         <Setter Property="HeightRequest" Value="50" />
         <Setter Property="CornerRadius" Value="10" />
         <Setter Property="BackgroundColor" Value="ForestGreen" />
-        <Setter Property="TextColor" Value="Blue" />
+        <Setter Property="TextColor" Value="white" />
         <Setter Property="FontAttributes" Value="Bold" />
         <Setter Property="HorizontalOptions" Value="Fill" />
 
     </Style>
-    -->
+
 
 </ResourceDictionary>
-
-
