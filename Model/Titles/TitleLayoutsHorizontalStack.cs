@@ -12,5 +12,3 @@ namespace MyFirstMAUIApp.Models.Titles
 
     }
 }
-
-

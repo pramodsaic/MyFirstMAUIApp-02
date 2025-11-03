@@ -10,4 +10,3 @@ public partial class LayoutsHorizontalPage : ContentPage
         BindingContext = new LayoutsHorizontalViewModel();
     }
 }
-
