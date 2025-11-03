@@ -1,6 +1,6 @@
-﻿using FirstMauiMobileApp.Views;
+﻿using MyFirstMAUIApp.Views;
 
-namespace FirstMauiMobileApp
+namespace MyFirstMAUIApp
 {
     public partial class App : Application
     {

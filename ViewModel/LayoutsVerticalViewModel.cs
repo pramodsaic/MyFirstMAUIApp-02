@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FirstMauiMobileApp.ViewModels
+namespace MyFirstMAUIApp.ViewModels
 {
     public partial class LayoutsVerticalViewModel : ObservableObject
     {

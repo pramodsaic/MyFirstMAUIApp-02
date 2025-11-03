@@ -1,7 +1,7 @@
 ﻿using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
 
-namespace FirstMauiMobileApp
+namespace MyFirstMAUIApp
 {
     public static class MauiProgram
     {

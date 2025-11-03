@@ -1,9 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using FirstMauiMobileApp.Views;
-using MyFirstMAUIApp;
 using MyFirstMAUIApp.Models.Titles;
-using System.Windows.Input;
+using MyFirstMAUIApp.Views;
 
 namespace FirstMauiMobileApp.ViewModels
 {
