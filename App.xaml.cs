@@ -1,6 +1,6 @@
-﻿using MyFirstMAUIApp.View;
+﻿using FirstMauiMobileApp.Views;
 
-namespace MyFirstMAUIApp
+namespace FirstMauiMobileApp
 {
     public partial class App : Application
     {
@@ -10,7 +10,11 @@ namespace MyFirstMAUIApp
 
             //MainPage = new AppShell();
             //MainPage = new MainPage();
-            MainPage = new NavigationPage(new MainPage());
+            //MainPage = new NavigationPage(new MainPage());
+            MainPage = new AppShell();
         }
     }
 }
+
+
+

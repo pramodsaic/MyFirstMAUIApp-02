@@ -1,6 +1,6 @@
-using MyFirstMAUIApp.ViewModel;
+using FirstMauiMobileApp.ViewModels;
 
-namespace MyFirstMAUIApp.View;
+namespace FirstMauiMobileApp.Views;
 
 public partial class LayoutsPage : ContentPage
 {

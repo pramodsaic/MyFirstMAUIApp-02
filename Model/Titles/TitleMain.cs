@@ -1,13 +1,20 @@
-﻿namespace MyFirstMAUIApp.Model
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MyFirstMAUIApp.Models.Titles
 {
     public static class TitleMain
     {
-        public static string Title { get; set; } = "Main Menu";
-        public static string LayoutsButton { get; set; } = "Layouts";
-        public static string ImagesButton { get; set; } = "Images";
-        public static string CollectionsButton { get; set; } = "Collections";
-        public static string ControlsButton { get; set; } = "Controls";
-        public static string SQLiteButton { get; set; } = "SQL Lite";
+        public static string Title { get; } = "Main View";
+        public static string Layouts { get; } = "Layouts";
+        public static string Images { get; } = "Images";
+        public static string Collections { get; } = "Collections";
+        public static string Controls { get; } = "Controls";
+        public static string SQLite { get; } = "SQL Lite";
+
     }
 }
 

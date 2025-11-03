@@ -1,4 +1,4 @@
-using MyFirstMAUIApp.ViewModel;
+using FirstMauiMobileApp.ViewModels;
 
 namespace MyFirstMAUIApp.View;
 

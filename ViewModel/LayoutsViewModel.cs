@@ -1,22 +1,67 @@
-﻿using MyFirstMAUIApp.Model;
-using MyFirstMobileApp.ViewModels;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using FirstMauiMobileApp.Views;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using CommunityToolkit.Mvvm.Input;
+using MyFirstMAUIApp.Models.Titles;
+using MyFirstMAUIApp.Views;
 
-namespace MyFirstMAUIApp.ViewModel
+namespace FirstMauiMobileApp.ViewModels
 {
-    public class LayoutsViewModel : BaseViewModel
+    public partial class LayoutsViewModel : ObservableObject
     {
-        public string LayoutsTitle { get; set; } = TitleLayouts.Title;
-        public string ButtonTextStackLayout { get; set; } = TitleLayouts.ButtonTextStackLayout;
-        public string ButtonTextVerticalLayout { get; set; } = TitleLayouts.ButtonTextVerticalLayout;
-        public string ButtonTextHorizontalLayout { get; set; } = TitleLayouts.ButtonTextHorizontalLayout;
-        public string ButtonTextAbsoluteLayout { get; set; } = TitleLayouts.ButtonTextAbsoluteLayout;
-        public string ButtonTextFlexLayout { get; set; } = TitleLayouts.ButtonTextFlexLayout;
+
+        [ObservableProperty]
+        public string layoutsTitle = TitleLayouts.LayoutsTitle;
+
+        [ObservableProperty]
+        private string stackLayout = TitleLayouts.StackLayout;
+
+        [ObservableProperty]
+        public string absoluteLayout = TitleLayouts.AbsoluteLayout;
+
+        [ObservableProperty]
+        public string verticalStack = TitleLayouts.VerticalStack;
+
+        [ObservableProperty]
+        public string horizontalStack = TitleLayouts.HorizontalStack;
+
+        [ObservableProperty]
+        public string flexLayout = TitleLayouts.FlexLayout;
 
         public LayoutsViewModel()
         {
-            Title = TitleLayouts.Title;
+            //Title = TitleLayouts.LayoutsTitle;
+        }
+
+        [RelayCommand]
+        private async Task StackLayoutsClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(LayoutsStackPage));
+        }
+
+        [RelayCommand]
+        private async Task VerticalStackLayoutClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(LayoutsVerticalPage));
+        }
+
+        [RelayCommand]
+        private async Task HorizontalStackLayoutClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(MyFirstMAUIApp.Views.LayoutsHorizontalPage));
+        }
+
+        [RelayCommand]
+        private async Task AbsoluteLayoutClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(LayoutsAbsolutePage));
         }
     }
 }
+
 
 

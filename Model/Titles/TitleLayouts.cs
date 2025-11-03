@@ -1,12 +1,21 @@
-﻿namespace MyFirstMAUIApp.Model
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MyFirstMAUIApp.Models.Titles
 {
-    public static class TitleLayouts
+    class TitleLayouts
     {
-        public static string Title { get; set; } = "Layouts";
-        public static string ButtonTextStackLayout { get; set; } = "Stack Layout";
-        public static string ButtonTextVerticalLayout { get; set; } = "Vertical Layout";
-        public static string ButtonTextHorizontalLayout { get; set; } = "Horizontal Layout";
-        public static string ButtonTextAbsoluteLayout { get; set; } = "Absolute Layout";
-        public static string ButtonTextFlexLayout { get; set; } = "Flex Layout";
+        public static string LayoutsTitle { get; } = "Layouts Menu";
+        public static string StackLayout { get; } = "Stack Layout";
+        public static string VerticalStack { get; } = "Vertical Stack";
+        public static string HorizontalStack { get; } = "Horizontal Stack";
+        public static string AbsoluteLayout { get; } = "Absolute Layout";
+        public static string FlexLayout { get; } = "Flex Layout";
+
     }
 }
+
+
