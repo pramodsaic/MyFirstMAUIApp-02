@@ -14,6 +14,3 @@ namespace MyFirstMAUIApp.ViewModels
         public string absoluteLayoutTitle = TitleLayoutsAbsolute.AbsoluteLayoutTitle;
     }
 }
-
-
-

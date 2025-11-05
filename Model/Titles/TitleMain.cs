@@ -8,7 +8,7 @@ namespace MyFirstMAUIApp.Models.Titles
 {
     public static class TitleMain
     {
-        public static string Title { get; } = "Main View";
+        public static string Title { get; } = "Main Menu";
         public static string Layouts { get; } = "Layouts";
         public static string Images { get; } = "Images";
         public static string Collections { get; } = "Collections";
