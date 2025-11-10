@@ -11,5 +11,3 @@ public partial class LayoutsAbsolutePage : ContentPage
 
     }
 }
-
-

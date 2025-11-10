@@ -6,114 +6,148 @@
 
     <AbsoluteLayout>
 
-            <!-- Title -->
-            <Label Text="Absolute!"
-               FontSize="32"
-               FontAttributes="Bold"
+        <Label Text="Absolute!"
                HorizontalTextAlignment="Center"
-               AbsoluteLayout.LayoutBounds="0.5, 0.1, 300, 50"
-               AbsoluteLayout.LayoutFlags="PositionProportional" />
+               FontSize="Large"
+               AbsoluteLayout.LayoutBounds="0.5, 0.1, 100, 100"
+               AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-            <!-- Grid of Boxes -->
-            <!-- Row 1 -->
-            <Grid AbsoluteLayout.LayoutBounds="0.5, 0.3, 360, 60"
-              AbsoluteLayout.LayoutFlags="PositionProportional"
-              ColumnSpacing="10">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="80"/>
-                    <ColumnDefinition Width="80"/>
-                    <ColumnDefinition Width="80"/>
-                    <ColumnDefinition Width="80"/>
-                </Grid.ColumnDefinitions>
+        <!-- Row 0 -->
 
-                <Grid Grid.Column="0">
-                    <BoxView Color="#228B22"/>
-                    <Label Text="01" TextColor="White" FontSize="24" FontAttributes="Bold"
-                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-                </Grid>
-                <Grid Grid.Column="1">
-                    <BoxView Color="#DC143C"/>
-                    <Label Text="02" TextColor="White" FontSize="24" FontAttributes="Bold"
-                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-                </Grid>
-                <Grid Grid.Column="2">
-                    <BoxView Color="#FFA07A"/>
-                    <Label Text="03" TextColor="Black" FontSize="24" FontAttributes="Bold"
-                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-                </Grid>
-                <Grid Grid.Column="3">
-                    <BoxView Color="#ADD8E6"/>
-                    <Label Text="04" TextColor="Black" FontSize="24" FontAttributes="Bold"
-                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-                </Grid>
-            </Grid>
+        <BoxView Color="#008000"
+                 AbsoluteLayout.LayoutBounds="0.05, 0.2, 0.2, 0.06"
+                 AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
 
-            <!-- Row 2 -->
-            <Grid AbsoluteLayout.LayoutBounds="0.5, 0.45, 360, 60"
-              AbsoluteLayout.LayoutFlags="PositionProportional"
-              ColumnSpacing="10">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="80"/>
-                    <ColumnDefinition Width="80"/>
-                    <ColumnDefinition Width="80"/>
-                    <ColumnDefinition Width="80"/>
-                </Grid.ColumnDefinitions>
+        <BoxView Color="#dc143d"
+                 AbsoluteLayout.LayoutBounds="0.35, 0.2, 0.2, 0.06"
+                 AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
 
-                <Grid Grid.Column="0">
-                    <BoxView Color="#006400"/>
-                    <Label Text="05" TextColor="White" FontSize="24" FontAttributes="Bold"
-                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-                </Grid>
-                <Grid Grid.Column="1">
-                    <BoxView Color="#8B0000"/>
-                    <Label Text="06" TextColor="White" FontSize="24" FontAttributes="Bold"
-                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-                </Grid>
-                <Grid Grid.Column="2">
-                    <BoxView Color="#90EE90"/>
-                    <Label Text="07" TextColor="Black" FontSize="24" FontAttributes="Bold"
-                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-                </Grid>
-                <Grid Grid.Column="3">
-                    <BoxView Color="#FFD700"/>
-                    <Label Text="08" TextColor="Black" FontSize="24" FontAttributes="Bold"
-                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-                </Grid>
-            </Grid>
+        <BoxView Color="#ffe4c4"
+                 AbsoluteLayout.LayoutBounds="0.65, 0.2, 0.2, 0.06"
+                 AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
 
-            <!-- Row 3 -->
-            <Grid AbsoluteLayout.LayoutBounds="0.5, 0.6, 360, 60"
-              AbsoluteLayout.LayoutFlags="PositionProportional"
-              ColumnSpacing="10">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="80"/>
-                    <ColumnDefinition Width="80"/>
-                    <ColumnDefinition Width="80"/>
-                    <ColumnDefinition Width="80"/>
-                </Grid.ColumnDefinitions>
+        <BoxView Color="#c3e9fb"
+                 AbsoluteLayout.LayoutBounds="0.95, 0.2, 0.2, 0.06"
+                 AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
 
-                <Grid Grid.Column="0">
-                    <BoxView Color="#A0522D"/>
-                    <Label Text="09" TextColor="White" FontSize="24" FontAttributes="Bold"
-                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-                </Grid>
-                <Grid Grid.Column="1">
-                    <BoxView Color="#00CED1"/>
-                    <Label Text="10" TextColor="White" FontSize="24" FontAttributes="Bold"
-                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-                </Grid>
-                <Grid Grid.Column="2">
-                    <BoxView Color="#808080"/>
-                    <Label Text="11" TextColor="White" FontSize="24" FontAttributes="Bold"
-                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-                </Grid>
-                <Grid Grid.Column="3">
-                    <BoxView Color="#9370DB"/>
-                    <Label Text="12" TextColor="White" FontSize="24" FontAttributes="Bold"
-                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-                </Grid>
-            </Grid>
+        <Label Text="01"
+               TextColor="White"
+               FontSize="24"
+               HorizontalTextAlignment="Center"
+               AbsoluteLayout.LayoutBounds="0.05, 0.2, 0.2, 0.06"
+               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
 
-        </AbsoluteLayout>
-    </ContentPage>
+        <Label Text="02"
+               TextColor="Snow"
+               FontSize="24"
+               HorizontalTextAlignment="Center"
+               AbsoluteLayout.LayoutBounds="0.35, 0.2, 0.2, 0.06"
+               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
 
+        <Label Text="03"
+               TextColor="Red"
+               FontSize="24"
+               HorizontalTextAlignment="Center"
+               AbsoluteLayout.LayoutBounds="0.65, 0.2, 0.2, 0.06"
+               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+
+        <Label Text="04"
+               TextColor="Purple"
+               FontSize="24"
+               HorizontalTextAlignment="Center"
+               AbsoluteLayout.LayoutBounds="0.95, 0.2, 0.2, 0.06"
+               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+
+        <!-- Row 1 -->
+
+        <BoxView Color="#7fffd4"
+                 AbsoluteLayout.LayoutBounds="0.05, 0.3, 0.2, 0.06"
+                 AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+
+        <BoxView Color="#a52b2b"
+                 AbsoluteLayout.LayoutBounds="0.35, 0.3, 0.2, 0.06"
+                 AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+
+        <BoxView Color="#5f9ea0"
+                 AbsoluteLayout.LayoutBounds="0.65, 0.3, 0.2, 0.06"
+                 AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+
+        <BoxView Color="#dda0dd"
+                 AbsoluteLayout.LayoutBounds="0.95, 0.3, 0.2, 0.06"
+                 AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+
+        <Label Text="05"
+               TextColor="Green"
+               FontSize="24"
+               HorizontalTextAlignment="Center"
+               AbsoluteLayout.LayoutBounds="0.05, 0.3, 0.2, 0.06"
+               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+
+        <Label Text="06"
+               TextColor="White"
+               FontSize="24"
+               HorizontalTextAlignment="Center"
+               AbsoluteLayout.LayoutBounds="0.35, 0.3, 0.2, 0.06"
+               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+
+        <Label Text="07"
+               TextColor="White"
+               FontSize="24"
+               HorizontalTextAlignment="Center"
+               AbsoluteLayout.LayoutBounds="0.65, 0.3, 0.2, 0.06"
+               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+
+        <Label Text="08"
+               TextColor="Yellow"
+               FontSize="24"
+               HorizontalTextAlignment="Center"
+               AbsoluteLayout.LayoutBounds="0.95, 0.3, 0.2, 0.06"
+               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+
+        <!-- Row 2 -->
+
+        <BoxView Color="#9acd32"
+                 AbsoluteLayout.LayoutBounds="0.05, 0.4, 0.2, 0.06"
+                 AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+
+        <BoxView Color="#40e0d0"
+                 AbsoluteLayout.LayoutBounds="0.35, 0.4, 0.2, 0.06"
+                 AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+
+        <BoxView Color="#556b2e"
+                 AbsoluteLayout.LayoutBounds="0.65, 0.4, 0.2, 0.06"
+                 AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+
+        <BoxView Color="#4682b4"
+                 AbsoluteLayout.LayoutBounds="0.95, 0.4, 0.2, 0.06"
+                 AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+
+        <Label Text="09"
+               TextColor="Red"
+               FontSize="24"
+               HorizontalTextAlignment="Center"
+               AbsoluteLayout.LayoutBounds="0.05, 0.4, 0.2, 0.06"
+               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+
+        <Label Text="10"
+               TextColor="RED"
+               FontSize="24"
+               HorizontalTextAlignment="Center"
+               AbsoluteLayout.LayoutBounds="0.35, 0.4, 0.2, 0.06"
+               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+
+        <Label Text="11"
+               TextColor="LightBlue"
+               FontSize="24"
+               HorizontalTextAlignment="Center"
+               AbsoluteLayout.LayoutBounds="0.65, 0.4, 0.2, 0.06"
+               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+
+        <Label Text="12"
+               TextColor="LightBlue"
+               FontSize="24"
+               HorizontalTextAlignment="Center"
+               AbsoluteLayout.LayoutBounds="0.95, 0.4, 0.2, 0.06"
+               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+    </AbsoluteLayout>
+</ContentPage>

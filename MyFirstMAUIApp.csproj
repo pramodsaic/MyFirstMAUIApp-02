@@ -88,6 +88,9 @@
 	  <MauiXaml Update="View\LayoutsAbsolutePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="View\LayoutsFlexPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="View\LayoutsHorizontalPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
