@@ -8,5 +8,6 @@ namespace MyFirstMAUIApp.Model.Titles
 {
     class TitleLayoutsFlex
     {
+        public static string FlexLayoutTitle { get; } = "Flex Layout";
     }
 }
