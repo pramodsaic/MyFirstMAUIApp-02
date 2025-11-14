@@ -1,5 +1,5 @@
 using CommunityToolkit.Mvvm.ComponentModel;
-using MyFirstMAUIApp.Model.Titles;
+using MyFirstMAUIApp.Models.Titles;
 using System;
 using System.Collections.Generic;
 using System.Linq;

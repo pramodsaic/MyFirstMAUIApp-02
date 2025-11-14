@@ -1,6 +1,6 @@
 using MyFirstMAUIApp.ViewModels;
 
-namespace MyFirstMAUIApp.View;
+namespace MyFirstMAUIApp.Views;
 
 public partial class LayoutsFlexPage : ContentPage
 {
