@@ -7,7 +7,7 @@
     <FlexLayout Direction="Row" 
                 JustifyContent="SpaceAround" 
                 AlignItems="Center" 
-                BackgroundColor="Azure">
+                BackgroundColor="White">
 
         <VerticalStackLayout>
             <BoxView Color="Red" 
