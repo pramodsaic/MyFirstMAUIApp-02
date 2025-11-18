@@ -1,4 +1,4 @@
-﻿using FirstMauiMobileApp;
+﻿using MyFirstMAUIApp;
 using Foundation;
 
 namespace MyFirstMAUIApp

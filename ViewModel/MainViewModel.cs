@@ -1,9 +1,10 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using MyFirstMAUIApp.Models.Titles;
+using MyFirstMAUIApp.View;
 using MyFirstMAUIApp.Views;
 
-namespace FirstMauiMobileApp.ViewModels
+namespace MyFirstMAUIApp.ViewModel
 {
     public partial class MainViewModel : ObservableObject
     {
@@ -47,6 +48,17 @@ namespace FirstMauiMobileApp.ViewModels
         //{
         //    await Application.Current.MainPage.Navigation.PushAsync(new LayoutsPage());
         //}
+        [RelayCommand]
+        private async Task ImagesClicked()
+        {
+            // If your app uses Shell and the page is routable by name, this is fine:
+            // await Shell.Current.GoToAsync(nameof(LayoutsPage));
+
+            // If you are not using Shell or want a safe fallback, use PushAsync:
+            //System.Diagnostics.Debug.WriteLine("MAINVM: OnLayoutsClicked invoked");
+            //await Application.Current.MainPage.Navigation.PushAsync(new LayoutsPage());
+            await Shell.Current.GoToAsync(nameof(ImageMenu));
+        }
 
     }
 

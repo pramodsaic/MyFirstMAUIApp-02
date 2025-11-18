@@ -1,4 +1,6 @@
 ﻿using MyFirstMAUIApp.Views;
+using MyFirstMAUIApp.ViewModels;
+using MyFirstMAUIApp.View;
 
 namespace MyFirstMAUIApp
 {
@@ -21,6 +23,12 @@ namespace MyFirstMAUIApp
             Routing.RegisterRoute(nameof(LayoutsHorizontalPage), typeof(LayoutsHorizontalPage));
             Routing.RegisterRoute(nameof(LayoutsAbsolutePage), typeof(LayoutsAbsolutePage));
             Routing.RegisterRoute(nameof(LayoutsFlexPage), typeof(LayoutsFlexPage));
+            //Images
+            Routing.RegisterRoute(nameof(ImageMenu), typeof(ImageMenu));
+            Routing.RegisterRoute(nameof(ImagesURIPage), typeof(ImagesURIPage));
+            Routing.RegisterRoute(nameof(ImagesEmbeddedPage), typeof(ImagesEmbeddedPage));
+            Routing.RegisterRoute(nameof(ActivityIndicatorPage), typeof(ActivityIndicatorPage));
+
 
         }
 
