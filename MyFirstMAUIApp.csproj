@@ -73,6 +73,9 @@
 	  <Compile Update="Resources\Styles\ButtonStyles.xaml.cs">
 	    <DependentUpon>ButtonStyles.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="View\CollectionPage.xaml.cs">
+	    <DependentUpon>CollectionPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="View\MainPage.xaml.cs">
 	    <DependentUpon>MainPage.xaml</DependentUpon>
 	  </Compile>
@@ -86,6 +89,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\ActivityIndicatorPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\CollectionPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\ImageMenu.xaml">

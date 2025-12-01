@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstMAUIApp.View.CollectionPage"
+             Title="{Binding Title}">
+
+    <VerticalStackLayout Padding="30" Spacing="25">
+        <Grid ColumnSpacing="10" RowSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Button Grid.Row="0"
+                    Grid.Column="0"
+                    Text="{Binding ButtonTextCollectionsIn}"
+                    Command="{Binding CollectionInClickedCommand}"
+                    Style="{StaticResource TitleButton}"/>
+
+            <Button Grid.Row="1"
+                    Grid.Column="0"
+                    Text="{Binding ButtonTextCollectionImages}"
+                    Command="{Binding CollectionImagesClickedCommand}"
+                    Style="{StaticResource TitleButton}"/>
+
+            <Button Grid.Row="2"
+                    Grid.Column="0"
+                    Text="{Binding ButtonTextCollectionButtons}"
+                    Command="{Binding CollectionButtonsClickedCommand}"
+                    Style="{StaticResource TitleButton}"/>
+
+            <Button Grid.Row="3"
+                    Grid.Column="0"
+                    Text="{Binding ButtonTextCollectionIcons}"
+                    Command="{Binding CollectionIconsClickedCommand}"
+                    Style="{StaticResource TitleButton}"/>
+
+        </Grid>
+    </VerticalStackLayout>
+
+</ContentPage>
+

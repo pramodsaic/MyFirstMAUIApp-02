@@ -7,7 +7,7 @@ namespace MyFirstMAUIApp.ViewModel
     public partial class EmbeddedImagesViewModel : ObservableObject
     {
         public string Title => TitleEmbeddedImage.EmbeddedImagesTitle;
-        public ImageSource ImageSource => "building.jpg";
+        public ImageSource ImageSource => "f1.jpg";
     }
 }
 
