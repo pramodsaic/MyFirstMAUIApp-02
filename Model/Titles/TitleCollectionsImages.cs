@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyFirstMAUIApp.Model.Titles
 {
-    internal class TittleCollectionsImages
+    class TitleCollectionsImages
     {
     }
 }

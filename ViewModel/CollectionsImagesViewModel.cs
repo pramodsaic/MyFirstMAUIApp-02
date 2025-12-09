@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using MyFirstMAUIApp.Model.Titles;
+using MyFirstMAUIApp.Models.Titles;
 
 namespace MyFirstMAUIApp.ViewModel
 {
-    internal class CollectionsImagesViewModel
+    public partial class CollectionsImagesViewModel : ObservableObject
     {
+        [ObservableProperty]
+        public string verticalStackLayoutTitle = TitleLayoutsVerticalStack.VerticalLayoutTitle;
+
     }
 }
+
+

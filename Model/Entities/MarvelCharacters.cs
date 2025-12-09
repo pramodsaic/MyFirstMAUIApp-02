@@ -39,5 +39,3 @@ namespace MyFirstMAUIApp.Model.Entities
      };
     }
 }
-
-
