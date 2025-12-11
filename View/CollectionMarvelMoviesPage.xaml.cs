@@ -2,7 +2,7 @@ using MyFirstMAUIApp.ViewModel;
 
 namespace MyFirstMAUIApp.View;
 
-public partial class CollectionMarvelMoviesPage : ContentView
+public partial class CollectionMarvelMoviesPage : ContentPage
 {
 	public CollectionMarvelMoviesPage()
 	{

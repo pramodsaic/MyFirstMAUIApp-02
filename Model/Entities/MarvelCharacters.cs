@@ -1,6 +1,4 @@
-﻿using Microsoft.Maui.Controls;
-
-namespace MyFirstMAUIApp.Model.Entities;
+﻿namespace MyFirstMAUIApp.Model.Entities;
 
 public class MarvelCharacters
 {
@@ -30,4 +28,3 @@ public class MarvelCharacters
         new MarvelCharacters("Nebula", "Karen Gillan", ImageSource.FromFile("nebula.jpg"))
      };
 }
-

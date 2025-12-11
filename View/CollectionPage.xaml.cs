@@ -10,5 +10,3 @@ public partial class CollectionPage : ContentPage
         BindingContext = new CollectionsViewModel();
     }
 }
-
-

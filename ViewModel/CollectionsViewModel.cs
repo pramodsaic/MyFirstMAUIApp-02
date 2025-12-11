@@ -32,7 +32,11 @@ namespace MyFirstMAUIApp.ViewModel
             await Shell.Current.GoToAsync(nameof(CollectionMarvelMoviesPage));
         }
 
+        [RelayCommand]
+        private async Task CollectionWImagesClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(CollectionGOGwImagesPage));
+        }
+
     }
 }
-
-

@@ -30,7 +30,6 @@ public partial class CollectionGOGwImagesViewModel : ObservableObject
             _marvelCharactersCollection.Clear();
             foreach (var p in _marvelcharacters)
             {
-                // Use the existing MarvelCharacters instance instead of creating a new one
                 _marvelCharactersCollection.Add(p);
             }
         }
@@ -40,5 +39,3 @@ public partial class CollectionGOGwImagesViewModel : ObservableObject
         }
     }
 }
-
-

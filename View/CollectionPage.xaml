@@ -20,24 +20,32 @@
             <Button Grid.Row="0"
                     Grid.Column="0"
                     Text="{Binding ButtonTextCollectionsIn}"
-                    Command="{Binding CollectionInClickedCommand}"
+                    TextColor="Red"
+                    FontSize="Large"
+                    Command="{Binding MarvelMoviesClickedCommand}"
                     Style="{StaticResource TitleButton}"/>
 
             <Button Grid.Row="1"
                     Grid.Column="0"
                     Text="{Binding ButtonTextCollectionImages}"
-                    Command="{Binding CollectionImagesClickedCommand}"
+                    TextColor="Aqua"
+                    FontSize="Large"
+                    Command="{Binding CollectionWImagesClickedCommand}"
                     Style="{StaticResource TitleButton}"/>
 
             <Button Grid.Row="2"
                     Grid.Column="0"
                     Text="{Binding ButtonTextCollectionButtons}"
+                    TextColor="Yellow"
+                    FontSize="Large"
                     Command="{Binding CollectionButtonsClickedCommand}"
                     Style="{StaticResource TitleButton}"/>
 
             <Button Grid.Row="3"
                     Grid.Column="0"
                     Text="{Binding ButtonTextCollectionIcons}"
+                    TextColor="Green"
+                    FontSize="Large"
                     Command="{Binding CollectionIconsClickedCommand}"
                     Style="{StaticResource TitleButton}"/>
 
@@ -45,4 +53,3 @@
     </VerticalStackLayout>
 
 </ContentPage>
-
