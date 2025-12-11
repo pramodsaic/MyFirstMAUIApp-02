@@ -30,11 +30,8 @@ namespace MyFirstMAUIApp
             Routing.RegisterRoute(nameof(ActivityIndicatorPage), typeof(ActivityIndicatorPage));
             //Collections
             Routing.RegisterRoute(nameof(CollectionPage), typeof(CollectionPage));
-            Routing.RegisterRoute(nameof(CollectionsMarvelMoviesPage), typeof(CollectionsMarvelMoviesPage));
-            Routing.RegisterRoute(nameof(CollectionsImagesPage), typeof(CollectionsImagesPage));
-
-
-
+            Routing.RegisterRoute(nameof(CollectionMarvelMoviesPage), typeof(CollectionMarvelMoviesPage));
+            Routing.RegisterRoute(nameof(CollectionGOGwImagesPage), typeof(CollectionGOGwImagesPage));
 
         }
 

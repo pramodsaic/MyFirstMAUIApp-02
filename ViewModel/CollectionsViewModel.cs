@@ -29,7 +29,7 @@ namespace MyFirstMAUIApp.ViewModel
         [RelayCommand]
         private async Task MarvelMoviesClicked()
         {
-            await Shell.Current.GoToAsync(nameof(CollectionsMarvelMoviesPage));
+            await Shell.Current.GoToAsync(nameof(CollectionMarvelMoviesPage));
         }
 
     }

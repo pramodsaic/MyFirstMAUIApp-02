@@ -1,27 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//Ensure your NAMESPACE is correct
+namespace MyFirstMAUIApp.Model.Entities;
 
-namespace MyFirstMAUIApp.Model.Entities
+public class MarvelMovies
 {
-    public class MarvelMovies
+    public string NameofMovie { get; set; }
+    public static string MarvelMoviesTitle { get; internal set; } = "Marvel Movies Collection";
+
+    //Image Buttons
+    // public ImageSource EditButton { get; } = Buttons.ButtonEdit;
+    // public ImageSource DeleteButton { get; } = Buttons.ButtonDelete;
+
+    public MarvelMovies()
     {
-        public string NameofMovie { get; set; }
 
-        //Image Buttons
-        //public ImageSource EditButton { get; } = Buttons.ButtonEdit;
-        //public ImageSource DeleteButton { get; } = Buttons.ButtonDelete;
+    }
 
-        public MarvelMovies()
-        {
+    public MarvelMovies(string name) => NameofMovie = name;
 
-        }
-
-        public MarvelMovies(string name) => NameofMovie = name;
-
-        public static List<MarvelMovies> GetMovies() => new List<MarvelMovies>
+    public static List<MarvelMovies> GetMovies() => new List<MarvelMovies>
     {
         new MarvelMovies("Guardians of The Galaxy"),
         new MarvelMovies("Spiderman"),
@@ -32,5 +28,6 @@ namespace MyFirstMAUIApp.Model.Entities
         new MarvelMovies("Superman"),
         new MarvelMovies("Wonder Woman")
      };
-    }
 }
+
+

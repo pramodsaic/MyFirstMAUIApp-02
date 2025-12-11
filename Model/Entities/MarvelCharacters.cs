@@ -1,41 +1,33 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.Maui.Controls;
 
-namespace MyFirstMAUIApp.Model.Entities
+namespace MyFirstMAUIApp.Model.Entities;
+
+public class MarvelCharacters
 {
-    public class MarvelCharacters
+    public static string MarvelCharactersTitle { get; internal set; } = "Collection w/Images";
+    public string NameofCharacter { get; set; }
+    public string NameofActor { get; set; }
+    public ImageSource ImagePath { get; set; }
+
+    public MarvelCharacters(string name)
     {
-        public string CharacterName { get; set; }
-        public string ActorName { get; set; }
-        public ImageSource ImagePath { get; set; }
-
-        //Image Buttons
-        //public ImageSource EditButton { get; } = Buttons.ButtonEdit;
-        //public ImageSource DeleteButton { get; } = Buttons.ButtonDelete;
-
-        public MarvelCharacters()
-        {
-
-        }
-
-        public MarvelCharacters(string name, string actor, ImageSource image)
-        {
-            CharacterName = name;
-            ActorName = actor;
-            ImagePath = image;
-        }
-
-        public static List<MarvelCharacters> GetCharacters() => new List<MarvelCharacters>
-    {
-        new MarvelCharacters("Starlord", "Chris Pratt", "drakemaye.png"),
-        //new MarvelCharacters("Gamora", "Zoe Saldana", "gamora.jpg"),
-        //new MarvelCharacters("Groot", "Vin Diesel", "groot.jpg"),
-        //new MarvelCharacters("Rocket", "Bradley Cooper", "rocket.jpg"),
-        //new MarvelCharacters("Nebula", "Karen Gillan", "nebula.jpg")
-
-     };
+        NameofCharacter = name;
     }
+
+    public MarvelCharacters(string characterName, string actorName, ImageSource imageFile)
+    {
+        NameofCharacter = characterName;
+        NameofActor = actorName;
+        ImagePath = imageFile; //ImageSource.FromFile(imageFile);
+    }
+
+    public static List<MarvelCharacters> GetCharacters() => new List<MarvelCharacters>
+    {
+        new MarvelCharacters("Starlord", "Chris Pratt", ImageSource.FromFile("starlord.jpg")),
+        new MarvelCharacters("Gamora", "Zoe Saldana", ImageSource.FromFile("gamora.jpg")),
+        new MarvelCharacters("Groot", "Vin Diesel", ImageSource.FromFile("groot.jpg")),
+        new MarvelCharacters("Rocket", "Bradley Cooper", ImageSource.FromFile("rocket.jpg")),
+        new MarvelCharacters("Nebula", "Karen Gillan", ImageSource.FromFile("nebula.jpg"))
+     };
 }
+
