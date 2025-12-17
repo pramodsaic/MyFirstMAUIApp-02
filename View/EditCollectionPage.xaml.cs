@@ -8,7 +8,7 @@ namespace MyFirstMAUIApp.Views;
 
 public partial class EditCollectionPage : ContentPage, IQueryAttributable
 {
-    public EditCollectionPage()
+    public EditCollectionPage(Model.Entities.MarvelMovies movie)
     {
         InitializeComponent();
         BindingContext = new EditCollectionViewModel();

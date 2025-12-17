@@ -1,4 +1,5 @@
 ﻿using MyFirstMAUIApp.Model.Entities;
+using MyFirstMAUIApp.Model.Titles;
 using MyFirstMAUIApp.Models.Messages;
 using MyFirstMAUIApp.ViewModels;
 using System.Windows.Input;

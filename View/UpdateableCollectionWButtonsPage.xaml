@@ -1,7 +1,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:model="clr-namespace:MyFirstMAUIApp.Model.Entities"
-             x:Class="MyFirstMAUIApp.ViewViewModels.CollectionsUpdatable.UpdateableCollectionWButtonsView"
+             x:Class="MyFirstMAUIApp.View.UpdateableCollectionWButtonsPage"
              Title="{Binding Title}">
 
     <!-- Applying a "Style" to the buttons. This will provide space between the buttons -->
@@ -35,7 +35,7 @@
                                        HorizontalTextAlignment="Start" TextColor="Black" FontSize="Medium"
                                        FlexLayout.Grow="1" />
 
-                                <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="End">
                                     <Button Text="Update" Command="{Binding Path=BindingContext.UpdateCommand, Source={x:Reference ItemsCollectionView}}"
                                             CommandParameter="{Binding .}" TextTransform="None" HorizontalOptions="End" />
 

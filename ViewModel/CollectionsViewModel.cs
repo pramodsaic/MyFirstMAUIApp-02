@@ -38,5 +38,11 @@ namespace MyFirstMAUIApp.ViewModel
             await Shell.Current.GoToAsync(nameof(CollectionGOGwImagesPage));
         }
 
+        [RelayCommand]
+        private async Task CollectionButtonsClickedCommand()
+        {
+            await Shell.Current.GoToAsync(nameof(UpdateableCollectionWButtonsPage));
+        }
+
     }
 }

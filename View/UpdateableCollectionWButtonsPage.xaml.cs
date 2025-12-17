@@ -1,13 +1,11 @@
-using MyFirstMAUIApp.ViewModels;
 using MyFirstMAUIApp.ViewViewModels.CollectionsUpdatable;
-
-namespace MyFirstMAUIApp.Views;
+namespace MyFirstMAUIApp.View;
 
 public partial class UpdateableCollectionWButtonsPage : ContentPage
 {
     public UpdateableCollectionWButtonsPage(UpdateableCollectionViewModel vm)
     {
-        InitializeComponent();
         BindingContext = vm;
+        InitializeComponent();
     }
 }

@@ -2,14 +2,14 @@
 using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.Messaging;
 using MyFirstMAUIApp.Model.Entities;
+using MyFirstMAUIApp.Model.Titles;
 using MyFirstMAUIApp.Models.Messages;
 
 namespace MyFirstMAUIApp.ViewModels
 {
     public partial class AddCollectionViewModel : ObservableObject
     {
-        [ObservableProperty]
-        private string title = TitlesMisc.AddTitle;
+        public string Title => TitlesMisc.AddTitle;
 
         [ObservableProperty]
         private string movieName = string.Empty;
