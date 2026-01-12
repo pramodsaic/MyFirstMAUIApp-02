@@ -35,6 +35,8 @@ namespace MyFirstMAUIApp
             Routing.RegisterRoute(nameof(AddCollectionPage), typeof(AddCollectionPage));
             Routing.RegisterRoute(nameof(EditCollectionPage), typeof(EditCollectionPage));
             Routing.RegisterRoute(nameof(UpdateableCollectionWButtonsPage), typeof(UpdateableCollectionWButtonsPage));
+            // Controls
+            Routing.RegisterRoute(nameof(ControlsMenuPage), typeof(ControlsMenuPage));
 
         }
 

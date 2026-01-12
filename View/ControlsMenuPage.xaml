@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstMAUIApp.View.ControlsMenuPage"
+             Title="{Binding Title}">
+
+    <VerticalStackLayout Padding="30" Spacing="25">
+        <Grid ColumnSpacing="10" RowSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Button Grid.Row="0"
+                    Grid.Column="0"
+                    Text="{Binding ButtonTextSlider}"
+                    TextColor="White"
+                    FontSize="Medium"
+                    Style="{StaticResource TitleButton}"/>
+
+            <Button Grid.Row="0"
+                    Grid.Column="1"
+                    Text="{Binding ButtonTextStepper}"
+                    TextColor="White"
+                    FontSize="Medium"
+                    Style="{StaticResource TitleButton}"/>
+
+            <Button Grid.Row="1"
+                    Grid.Column="0"
+                    Text="{Binding ButtonTextSwitch}"
+                    TextColor="White"
+                    FontSize="Medium"
+                    Style="{StaticResource TitleButton}"/>
+
+            <Button Grid.Row="1"
+                    Grid.Column="1"
+                    Text="{Binding ButtonTextEntry}"
+                    TextColor="White"
+                    FontSize="Medium"
+                    Style="{StaticResource TitleButton}"/>
+
+            <Button Grid.Row="2"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Text="{Binding ButtonTextPicker}"
+                    TextColor="White"
+                    FontSize="Medium"
+                    Style="{StaticResource TitleButton}"/>
+
+            <Button Grid.Row="3"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Text="{Binding ButtonTextDateAndTimePicker}"
+                    TextColor="White"
+                    FontSize="Medium"
+                    Style="{StaticResource TitleButton}"/>
+        </Grid>
+    </VerticalStackLayout>
+
+</ContentPage>
+

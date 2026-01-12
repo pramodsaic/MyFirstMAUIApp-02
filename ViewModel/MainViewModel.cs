@@ -71,7 +71,17 @@ namespace MyFirstMAUIApp.ViewModel
             //await Application.Current.MainPage.Navigation.PushAsync(new LayoutsPage());
             await Shell.Current.GoToAsync(nameof(CollectionPage));
         }
+        [RelayCommand]
+        private async Task ControlsClicked()
+        {
+            // If your app uses Shell and the page is routable by name, this is fine:
+            // await Shell.Current.GoToAsync(nameof(LayoutsPage));
 
+            // If you are not using Shell or want a safe fallback, use PushAsync:
+            //System.Diagnostics.Debug.WriteLine("MAINVM: OnLayoutsClicked invoked");
+            //await Application.Current.MainPage.Navigation.PushAsync(new LayoutsPage());
+            await Shell.Current.GoToAsync(nameof(ControlsMenuPage));
+        }
     }
 
 }
