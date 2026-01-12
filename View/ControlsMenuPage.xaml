@@ -23,6 +23,7 @@
                     Text="{Binding ButtonTextSlider}"
                     TextColor="White"
                     FontSize="Medium"
+                    Command="{Binding SliderMenuClickedCommand}"
                     Style="{StaticResource TitleButton}"/>
 
             <Button Grid.Row="0"
@@ -50,14 +51,6 @@
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
                     Text="{Binding ButtonTextPicker}"
-                    TextColor="White"
-                    FontSize="Medium"
-                    Style="{StaticResource TitleButton}"/>
-
-            <Button Grid.Row="3"
-                    Grid.Column="0"
-                    Grid.ColumnSpan="2"
-                    Text="{Binding ButtonTextDateAndTimePicker}"
                     TextColor="White"
                     FontSize="Medium"
                     Style="{StaticResource TitleButton}"/>

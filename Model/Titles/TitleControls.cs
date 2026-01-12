@@ -3,6 +3,8 @@
     public static class TitleControls
     {
         public static string Title { get; set; } = "Controls Menu";
+        public static string VMTitle { get; set; } = "Slider VM";
+
         public static string ButtonTextSlider { get; set; } = "Slider Page";
         public static string ButtonTextStepper { get; set; } = "Stepper Page";
         public static string ButtonTextSwitch { get; set; } = "Switch Page";
@@ -11,4 +13,6 @@
         public static string ButtonTextDateAndTimePicker { get; set; } = "Date and Time Picker Page";
     }
 }
+
+
 

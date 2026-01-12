@@ -1,5 +1,7 @@
-﻿using MyFirstMAUIApp.Model;
-using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using MyFirstMAUIApp.Model;
+using MyFirstMAUIApp.View;
 
 namespace MyFirstMAUIApp.ViewModel
 {
@@ -28,6 +30,12 @@ namespace MyFirstMAUIApp.ViewModel
         public ControlsViewModel()
         {
 
+        }
+
+        [RelayCommand]
+        private async Task SliderMenuClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(ControlsSlider));
         }
 
     }
