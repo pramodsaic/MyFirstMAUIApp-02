@@ -5,6 +5,8 @@
         public static string Title { get; set; } = "Controls Menu";
         public static string VMTitle { get; set; } = "Slider VM";
 
+        public static string ButtonText50 { get; set; } = "Set Slider to 50%";
+
         public static string ButtonTextSlider { get; set; } = "Slider Page";
         public static string ButtonTextStepper { get; set; } = "Stepper Page";
         public static string ButtonTextSwitch { get; set; } = "Switch Page";

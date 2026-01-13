@@ -22,14 +22,12 @@
                FontAttributes="Bold" FontSize="Medium" TextColor="Blue"
                HorizontalOptions="Center" />
 
-        <Button Grid.Row="0"
-                Grid.Column="0"
-                Grid.ColumnSpan="2"
-                Text="{Binding ButtonTextDateAndTimePicker}"
-                TextColor="White"
-                FontSize="Medium"
-                Style="{StaticResource TitleButton}"/>
+        <Button Grid.Row="1"
+                Grid.Column="1"
+                Text="{Binding ButtonText50}"
+                Command="{Binding SetToHalfCommand}"
+                Style="{StaticResource TileButton}" />
+
 
     </VerticalStackLayout>
 </ContentPage>
-

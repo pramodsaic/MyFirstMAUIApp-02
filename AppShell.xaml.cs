@@ -37,6 +37,7 @@ namespace MyFirstMAUIApp
             Routing.RegisterRoute(nameof(UpdateableCollectionWButtonsPage), typeof(UpdateableCollectionWButtonsPage));
             // Controls
             Routing.RegisterRoute(nameof(ControlsMenuPage), typeof(ControlsMenuPage));
+            Routing.RegisterRoute(nameof(ControlsSlider), typeof(ControlsSlider));
 
         }
 
