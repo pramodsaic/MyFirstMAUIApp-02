@@ -1,20 +1,25 @@
-﻿namespace MyFirstMAUIApp.Model
+﻿namespace MyFirstMAUIApp.Model.Titles
 {
     public static class TitleControls
     {
-        public static string Title { get; set; } = "Controls Menu";
-        public static string VMTitle { get; set; } = "Slider VM";
+        public static string Title { get; } = "Controls Menu";
+        public static string Slider { get; } = "Slider";
+        public static string Stepper { get; } = "Stepper";
+        public static string Switch { get; } = "Switch";
+        public static string Entry { get; } = "Entry";
+        public static string Picker { get; } = "Picker";
+        public static string DateandTimePicker { get; } = "Date and Time Picker";
 
-        public static string ButtonText50 { get; set; } = "Set Slider to 50%";
+        // Stepper Menu
+        public static string StepperMenuTitle { get; } = "Stepper Menu";
+        public static string StepperXAML { get; } = "Stepper XAML";
+        public static string StepperVM { get; } = "Stepper VM";
 
-        public static string ButtonTextSlider { get; set; } = "Slider Page";
-        public static string ButtonTextStepper { get; set; } = "Stepper Page";
-        public static string ButtonTextSwitch { get; set; } = "Switch Page";
-        public static string ButtonTextEntry { get; set; } = "Entry Page";
-        public static string ButtonTextPicker { get; set; } = "Picker Page";
-        public static string ButtonTextDateAndTimePicker { get; set; } = "Date and Time Picker Page";
+        // Stepper VM
+        public static string StepperVMTitle { get; } = "Stepper VM";
+
+        // Stepper XAML
+        public static string StepperXAMLTitle { get; } = "Stepper XAML";
+
     }
 }
-
-
-

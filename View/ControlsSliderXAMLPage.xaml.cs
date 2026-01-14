@@ -1,35 +1,35 @@
+using GameplayKit;
 using MyFirstMAUIApp.ViewModel;
 
 namespace MyFirstMAUIApp.View;
 
-public partial class ControlsSlider : ContentPage
+public partial class ControlsSliderXAMLPage : ContentPage
 {
-    public ControlsSlider()
+    public ControlsSliderXAMLPage()
     {
         InitializeComponent();
-        BindingContext = new SliderViewModel();
+
+        BindingContext = new ControlsSliderXAMLViewModel();
 
         UpdateVisuals(MySlider.Value);
 
         SetPlatformPadding();
     }
 
-    private void OnSliderValueChanged(object sender, ValueChangedEventArgs e)
-                                       => UpdateVisuals(e.NewValue);
+    private void OnSliderValueChanged(object sender, ValueChangedEventArgs e) => UpdateVisuals(e.NewValue);
 
     private void UpdateVisuals(double value)
     {
         MyBox.Opacity = value;
-
-        ValueLabel.Text = string.Format("Slider Value: {0:F2}", value);
-
+        ValueLabel.Text = $"Value of the slider is {value:F2}";
         InfoLabel.Opacity = value;
 
     }
 
     private void SetPlatformPadding()
     {
-        if (DeviceInfo.Platform == DevicePlatform.iOS || DeviceInfo.Platform == DevicePlatform.Android)
+        if (DeviceInfo.Platform == DevicePlatform.iOS
+         || DeviceInfo.Platform == DevicePlatform.Android)
         {
             Padding = new Thickness(25);
         }
@@ -39,4 +39,3 @@ public partial class ControlsSlider : ContentPage
         }
     }
 }
-

@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyFirstMAUIApp.ViewModel
+namespace MyFirstMAUIApp.Model.Titles
 {
-    internal class ControlsViewModel
+    class TitleControlsSliderXAML
     {
+        public static string Title { get; } = "Slider XAML";
     }
 }

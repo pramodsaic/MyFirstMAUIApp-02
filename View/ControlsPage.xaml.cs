@@ -1,14 +1,12 @@
-using MyFirstMAUIApp.ViewModel;
-
 namespace MyFirstMAUIApp.View;
 
-public partial class ControlsMenuPage : ContentPage
+using MyFirstMAUIApp.ViewModel;
+
+public partial class ControlsPage : ContentPage
 {
-    public ControlsMenuPage()
+    public ControlsPage()
     {
         InitializeComponent();
         BindingContext = new ControlsViewModel();
     }
 }
-
-
