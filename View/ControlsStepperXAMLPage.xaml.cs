@@ -1,4 +1,5 @@
 using Microsoft.Maui.Controls;
+using MyFirstMAUIApp.ViewModel;
 
 namespace MyFirstMAUIApp.View;
 

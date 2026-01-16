@@ -1,4 +1,3 @@
-using GameplayKit;
 using MyFirstMAUIApp.ViewModel;
 
 namespace MyFirstMAUIApp.View;

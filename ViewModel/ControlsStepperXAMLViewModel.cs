@@ -8,8 +8,10 @@ using System.Threading.Tasks;
 
 namespace MyFirstMAUIApp.ViewModel
 {
-    public partial class ControlsSliderXAMLViewModel : ObservableObject
+    public partial class ControlsStepperXAMLViewModel : ObservableObject
     {
-        public string Title => TitleControlsSliderXAML.Title;
+        public string Title => TitleControls.StepperXAMLTitle;
+
     }
 }
+

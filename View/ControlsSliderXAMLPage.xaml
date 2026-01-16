@@ -5,7 +5,7 @@
              Title="ControlsSliderXAMLPage">
     <VerticalStackLayout Padding="20" Spacing="20">
 
-        <BoxView x:Name="MyBox" Color="DarkKhaki" HeightRequest="25" HorizontalOptions="Fill" />
+        <BoxView x:Name="MyBox" Color="ForestGreen" HeightRequest="25" HorizontalOptions="Fill" />
 
         <Slider x:Name="MySlider"
             Minimum="0" Maximum="1" Value="1"

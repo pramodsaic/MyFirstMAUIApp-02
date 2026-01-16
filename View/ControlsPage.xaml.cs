@@ -1,6 +1,7 @@
 namespace MyFirstMAUIApp.View;
 
 using MyFirstMAUIApp.ViewModel;
+using MyFirstMAUIApp.ViewModels;
 
 public partial class ControlsPage : ContentPage
 {
