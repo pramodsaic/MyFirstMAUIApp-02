@@ -1,10 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using MyFirstMAUIApp.Model.Titles;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MyFirstMAUIApp.ViewModel
 {
@@ -22,14 +17,14 @@ namespace MyFirstMAUIApp.ViewModel
         public ControlsStepperVMViewModel()
         {
             direction = 0;
-            LabelText = $"Value is {direction:F0}";
+            LabelText = $"The Stepper Value is {direction:F0}";
         }
 
         partial void OnDirectionChanged(double value) => UpdateVisual(value);
 
         public void UpdateVisual(double value)
         {
-            LabelText = $"Value is {value:F0}";
+            LabelText = $"The Stepper Value is {value:F0}";
 
         }
     }
